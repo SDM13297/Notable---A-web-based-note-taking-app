@@ -1,0 +1,235 @@
+@font-face {
+	font-family: Roboto;
+	src: url("../fonts/roboto/Roboto-Regular.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url("../fonts/roboto/Roboto-Bold.ttf");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Flat-UI-Icons';
+	src: url('../fonts/glyphicons/flat-ui-icons-regular.eot');
+	src: url('../fonts/glyphicons/flat-ui-icons-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons/flat-ui-icons-regular.woff') format('woff'), url('../fonts/glyphicons/flat-ui-icons-regular.ttf') format('truetype'), url('../fonts/glyphicons/flat-ui-icons-regular.svg#flat-ui-icons-regular') format('svg');
+  }
+
+[class^="fui-"],
+[class*="fui-"] {
+  font-family: 'Flat-UI-Icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+
+* {
+	font-family: Roboto;
+}
+
+header {
+	background-color: #2ABB9B;
+	width: 1544px;
+	margin-left: -8px;
+	margin-top: 0px;
+	padding-top: 10px;
+	height: 45px;
+}
+
+nav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	list-style-type: none;
+}
+
+nav ul li{
+	font-weight: bold;
+	margin-right:10px;
+	margin-top: -25px;
+	height: 25px;
+	cursor: pointer;
+	transition: color 200ms;
+}
+
+nav ul li a {
+	color: black;
+}
+
+nav ul li a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: white;
+	text-decoration: none;
+	transition: color 200ms;
+}
+
+nav ul li a:active {
+	color: black;
+	text-decoration: none;
+}
+
+nav ul li #profile {
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+	margin-top: -4px;
+	border-radius: 15px;
+	transition: box-shadow 200ms;
+}
+
+nav ul li #profile:hover {
+	box-shadow: 1px 1px 10px #888888;
+}
+
+header a{
+	margin-left: 40px;
+	position: relative;
+	bottom: 2px;
+}
+
+header #logo {
+	width:30px;
+	height:30px;
+}
+
+.fui-list:before {
+  content: "\e61a";
+  position: relative;
+  top: 0px;
+  left: 20px;
+  cursor: pointer;
+  transition: color 200ms;
+}
+
+.fui-list:hover:before {
+	color: white;
+}
+
+#container {
+	margin: 30px 50px 10px 50px;
+}
+
+#title {
+	border: 2px solid #FF5A43;
+	border-radius: 5px;
+	width: 500px;
+	margin-bottom: 5px;
+	font-size: 25px;
+	padding-left: 10px;
+}
+
+#area {
+	resize: none;
+	border: 1px solid #FF5A43;
+	border-radius: 8px;
+	transition: background-color 500ms;
+	padding-left: 10px;
+	padding-top: 10px;
+	white-space: pre-wrap;
+}
+
+#area:focus{
+	background-color:#FFFFF0;
+}
+
+#buttons {
+	text-align: right;
+}
+
+.notebutton {
+	background-color: #2F3661;
+	border: 1px solid black;
+	border-radius: 6px;
+	width: 150px;
+	height: 40px;
+	color: white;
+	font-size: 20px;
+	transition: background-color 200ms;
+	cursor: pointer;
+}
+
+.notebutton:hover {
+	background-color: #4F67FF;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+	padding: 2px 16px;
+	height: 50px;
+    background-color: #2ABB9B;
+    color: white;
+}
+
+.modal-header h2 {
+	margin-top: 5px;
+}
+
+.modal-body {
+	padding: 16px 16px;
+	height:60px;
+}
+
+#myModal input[type="text"] {
+	border: 1px solid;
+	border-radius: 5px;
+}
+
+#sharebutton {
+	width: 100px;
+	height: 25px;
+	font-size: 15px;
+}
